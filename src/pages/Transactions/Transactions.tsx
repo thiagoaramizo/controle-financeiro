@@ -1,5 +1,5 @@
-import { useContext } from 'react'
 import styled from 'styled-components'
+import { useContextSelector } from 'use-context-selector'
 import { Container } from '../../components/Container'
 import { Header } from '../../components/Header'
 import { AppContext } from '../../contexts/AppContext'
@@ -8,11 +8,9 @@ import { Summary } from './components/Summary'
 import { TransactionItemList } from './components/TrasactionItemList'
 
 export function Transactions() {
-  const { transactions } = useContext(AppContext)
-
-  const search = (value: string) => {
-    console.log(value)
-  }
+  const transactions = useContextSelector(AppContext, (context) => {
+    return context.transactions
+  })
 
   return (
     <>
@@ -22,7 +20,7 @@ export function Transactions() {
           <Summary />
         </TransactionsHeader>
 
-        <SearchForm onSearch={search} />
+        <SearchForm />
 
         <TransactionsList>
           <tbody>

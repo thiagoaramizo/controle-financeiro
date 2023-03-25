@@ -1,7 +1,7 @@
 import {
   ArrowCircleDown,
   ArrowCircleUp,
-  CurrencyDollar,
+  PiggyBank,
 } from '@phosphor-icons/react'
 import styled from 'styled-components'
 import { useSumary } from '../../../hooks/Summary'
@@ -32,7 +32,7 @@ export function Summary() {
       <SummaryCard variant="primary">
         <header>
           <span>Total</span>
-          <CurrencyDollar size={32} />
+          <PiggyBank size={32} />
         </header>
         <strong>R$ {priceFormatter.format(summary.total)}</strong>
       </SummaryCard>

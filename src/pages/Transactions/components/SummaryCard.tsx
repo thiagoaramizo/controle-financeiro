@@ -29,6 +29,10 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     props.variant === 'primary' &&
     css`
       background-color: ${props.theme['primary-dark']};
+
+      & header > span {
+        color: ${props.theme['gray-100']};
+      }
     `}
 
   ${(props) =>
