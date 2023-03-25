@@ -1,0 +1,44 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 15000,
+      "createdAt": "2023-03-24T16:02:48.032Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Compra",
+      "price": 100,
+      "createdAt": "2023-03-23T23:02:48.032Z"
+    },
+    {
+      "description": "Dev App",
+      "price": 10000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-03-25T13:14:42.973Z",
+      "id": 3
+    },
+    {
+      "description": "Dev SPA",
+      "price": 5000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-03-25T13:29:33.101Z",
+      "id": 4
+    },
+    {
+      "description": "Jantar",
+      "price": 120,
+      "category": "Compra",
+      "type": "outcome",
+      "createdAt": "2023-03-25T13:35:34.133Z",
+      "id": 5
+    }
+  ]
+}
